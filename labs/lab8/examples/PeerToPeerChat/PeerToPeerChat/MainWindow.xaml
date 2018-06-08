@@ -1,0 +1,22 @@
+﻿<Window x:Class="PeerToPeerChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeerToPeerChat"
+        mc:Ignorable="d"
+        Title="Megachat" Height="350" Width="525" Closed="Window_Closed">
+    <Grid>
+        <Label Content="Local port:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="tbLocalPort" HorizontalAlignment="Left" Height="18" Margin="86,14,0,0" TextWrapping="Wrap" Text="5000" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Remote addr:" HorizontalAlignment="Left" Margin="159,10,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="tbRemotePort" HorizontalAlignment="Left" Height="18" Margin="369,15,0,0" TextWrapping="Wrap" Text="5000" VerticalAlignment="Top" Width="53"/>
+        <Button x:Name="pbStart" Content="Start" Margin="0,14,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="pbStart_Click"/>
+        <ListBox x:Name="lbLog" Margin="10,41,10,34"/>
+        <TextBox x:Name="tbMessage" Margin="10,0,87,9" TextWrapping="Wrap" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="pbSend" Content="Send" Margin="0,0,10,9" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="72" Click="pbSend_Click"/>
+        <TextBox x:Name="tbRemoteAddr" HorizontalAlignment="Left" Height="18" Margin="242,14,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="82"/>
+        <Label Content="port" HorizontalAlignment="Left" Margin="334,10,0,0" VerticalAlignment="Top" Width="35"/>
+
+    </Grid>
+</Window>
